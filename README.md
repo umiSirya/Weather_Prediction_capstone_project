@@ -29,5 +29,5 @@ Data preprocessing involves cleaning, transforming, and organizing raw data into
 
 <h3> Step 7:</h3>
 
-<h3>Next Steps - Deploying the Recommender System on Streamlit Dashboard</h3>
+<h3>Next Steps - Deploying UV Monitor & Sunscreen Guide</h3>
 The next phase of my project involves deploying the UV Predictor & SPF Guide using Streamlit to create an interactive and user-friendly interface. Streamlit will enable users to input their city and receive real-time UV index predictions along with personalized sunscreen recommendations. By leveraging this platform, we aim to enhance accessibility and ensure users can make informed decisions about their sun protection with ease.
