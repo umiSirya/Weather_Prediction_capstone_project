@@ -74,8 +74,10 @@ The data includes the following columns:
 ![Image](https://github.com/user-attachments/assets/0cbb0acf-d3b7-48c6-8659-d91df4085abd)
 
 <br>
+
 ![Image](https://github.com/user-attachments/assets/93c62a16-3fda-484e-99bd-fbc5f54b9073)
- Carbon Monoxide (CO) dominates, making up 89.7% of the total pollutants. PM10 and PM2.5 contribute 5.4% and 4.3%, respectively. Both Sulfur Dioxide (SO2) and Nitrogen Dioxide (NO2) are minimal, each accounting for 0.3%. This indicates that CO is the major pollutant in the given data set.
+<br>
+Carbon Monoxide (CO) dominates, making up 89.7% of the total pollutants. PM10 and PM2.5 contribute 5.4% and 4.3%, respectively. Both Sulfur Dioxide (SO2) and Nitrogen Dioxide (NO2) are minimal, each accounting for 0.3%. This indicates that CO is the major pollutant in the given data set.
 <br>
 <br>
 
