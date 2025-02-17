@@ -44,7 +44,26 @@ The data includes the following columns:
 25. **Sunset:** The local time of sunset.
 
 <h2>Exploratory Data analysis</h2>
-1. **Description of summary statistics for our numeric columns**: Provides an overview of the data by highlighting its range, spread, and potential outliers.
+1. <strong>Description of summary statistics for our numeric columns:</strong>  Provides an overview of the data by highlighting its range, spread, and potential outliers<br>
+<img width="838" alt="Image" src="https://github.com/user-attachments/assets/b3330b6a-eb06-4c44-a21a-44d05d1af415" />
+
+2.<strong>Distribution plots for the numeric columns:</strong> Visualize how values are distributed across numeric columns revealing skewness and the presence of outliers.<br> ![Image](https://github.com/user-attachments/assets/d927b373-05bd-486e-91ac-a9417cb7e973)
+
+3. <strong>Correlation Matrix:</strong> Explores relationships that may exist between the numeric columns and the target variable UV Index.<br>
+![Image](https://github.com/user-attachments/assets/c0d66fa7-f02f-42e4-b013-3e9b622a59ea)
+
+# <h2>Data PreProcessing</h2>
+**Dropped Columns:** We dropped several columns that were deemed unnecessary for our analysis. These columns included 'Country', 'Local Time', 'Visibility (km)', 'Weather Condition', 'Tomorrow's Condition', 'Wind Direction', 'Longitude', and 'Latitude'. This was done to reduce the complexity of the dataset and focus on the most relevant features.
+
+**Sunrise and Sunset Conversion:** The 'Sunrise' and 'Sunset' columns, initially represented in time format, were converted to numerical features. Specifically, we calculated the minutes since midnight for both 'Sunrise' and 'Sunset' times. This transformation allows for easier integration into machine learning models.
+
+**Encoding:** Label encoding was used for the 'City' column, which contains categorical data representing different cities.
+
+**Feature Scaling:** Standard Scaling was applied to all features except the 'UV Index' to normalize the data. The 'UV Index' was also standardized to ensure consistency in the data scaling process.
+
+**Data Splitting:**I divided the dataset into three parts to ensure robust model performance: 70% for training, 15% for validation, and 15% for testing. This approach helps in training the model effectively, fine-tuning it, and evaluating its performance on unseen data.
+
+
 <h3> Step 1: Loading of Data and Understanding the Dataset </h3>
 The first step is loading the data and understanding the dataset which involves reviewing the dataset's columns, types, and summary statistics to gain insights into the data.
 
