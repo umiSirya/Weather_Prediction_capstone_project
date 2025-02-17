@@ -52,16 +52,49 @@ The data includes the following columns:
 3. <strong>Correlation Matrix:</strong> Explores relationships that may exist between the numeric columns and the target variable UV Index.<br>
 ![Image](https://github.com/user-attachments/assets/c0d66fa7-f02f-42e4-b013-3e9b622a59ea)
 
+# <h2>Visualisations</h2>
+![Image](https://github.com/user-attachments/assets/8a92c8e8-d0ae-463f-92fa-30adffd4927c)
+<br>
+**Sunny:** This weather condition has the highest frequency, with approximately 35 occurrences. It indicates that sunny weather is the most likely condition for tomorrow.
+**Patchy Rain Nearby:** This weather condition has a moderate frequency, with around 10 occurrences. It suggests that there will be some areas experiencing patchy rain.
+**Partly Cloudy:** This weather condition has the lowest frequency, with approximately 5 occurrences. It indicates that partly cloudy conditions are less common compared to sunny and patchy rain nearby.
+<br>
+![Image](https://github.com/user-attachments/assets/0cbb0acf-d3b7-48c6-8659-d91df4085abd)
+
+**Lodwar** has the highest average temperature, above 35°C.
+**Garissa** and **Wajir** follow with temperatures above 35°C.
+**Taita** has the lowest average temperature, below 15°C.
+<br>
+![Image](https://github.com/user-attachments/assets/93c62a16-3fda-484e-99bd-fbc5f54b9073)
+ Carbon Monoxide (CO) dominates, making up 89.7% of the total pollutants. PM10 and PM2.5 contribute 5.4% and 4.3%, respectively. Both Sulfur Dioxide (SO2) and Nitrogen Dioxide (NO2) are minimal, each accounting for 0.3%. This indicates that CO is the major pollutant in the given data set.
+<br>
+![Image](https://github.com/user-attachments/assets/7ae24fae-5f33-46d9-bb2d-59bf34132cea)
+ The heatmap titled "UV Index Across Various Cities" shows UV Index values for different cities at 7 PM. The key insights are:
+
+**Low UV Index:** Most cities have UV Index values ranging from 0.0 to 0.3, indicating very low UV radiation exposure in the evening.
+**Exception - Embu:** Embu has the highest UV Index value of 14.3, which is unusual .
+**Sparse Data:** Many cities do not have recorded UV Index values for the given time.
+This heatmap provides a clear visual representation of UV exposure levels across various locations at 7 PM, emphasizing generally low UV radiation during this time.
+<br> 
+![Image](https://github.com/user-attachments/assets/7c69a5cb-ac79-4949-832d-40c93cbd2dae)
+Based on the provided charts related to weather conditions at 7 PM:
+
+**Weather Conditions Distribution:** The majority of weather conditions are partly cloudy (59.5%), followed by sunny (31.0%). Patchy rain nearby and moderate rain at times are both less frequent at 2.4%.
+
+**Weather Conditions Over Time:** Sunny weather is consistently recorded, with partly cloudy conditions appearing frequently. Patchy rain and moderate rain appear less frequently, typically around specific time intervals.
+
+These charts highlight the dominance of partly cloudy and sunny conditions, with occasional rain events during specific times.
+
 # <h2>Data PreProcessing</h2>
-**Dropped Columns:** We dropped several columns that were deemed unnecessary for our analysis. These columns included 'Country', 'Local Time', 'Visibility (km)', 'Weather Condition', 'Tomorrow's Condition', 'Wind Direction', 'Longitude', and 'Latitude'. This was done to reduce the complexity of the dataset and focus on the most relevant features.
+1. **Dropped Columns:** We dropped several columns that were deemed unnecessary for our analysis. These columns included 'Country', 'Local Time', 'Visibility (km)', 'Weather Condition', 'Tomorrow's Condition', 'Wind Direction', 'Longitude', and 'Latitude'. This was done to reduce the complexity of the dataset and focus on the most relevant features.
 
-**Sunrise and Sunset Conversion:** The 'Sunrise' and 'Sunset' columns, initially represented in time format, were converted to numerical features. Specifically, we calculated the minutes since midnight for both 'Sunrise' and 'Sunset' times. This transformation allows for easier integration into machine learning models.
+2. **Sunrise and Sunset Conversion:** The 'Sunrise' and 'Sunset' columns, initially represented in time format, were converted to numerical features. Specifically, we calculated the minutes since midnight for both 'Sunrise' and 'Sunset' times. This transformation allows for easier integration into machine learning models.
 
-**Encoding:** Label encoding was used for the 'City' column, which contains categorical data representing different cities.
+3. **Encoding:** Label encoding was used for the 'City' column, which contains categorical data representing different cities.
 
-**Feature Scaling:** Standard Scaling was applied to all features except the 'UV Index' to normalize the data. The 'UV Index' was also standardized to ensure consistency in the data scaling process.
+4. **Feature Scaling:** Standard Scaling was applied to all features except the 'UV Index' to normalize the data. The 'UV Index' was also standardized to ensure consistency in the data scaling process.
 
-**Data Splitting:**I divided the dataset into three parts to ensure robust model performance: 70% for training, 15% for validation, and 15% for testing. This approach helps in training the model effectively, fine-tuning it, and evaluating its performance on unseen data.
+5. <strong>Data Splitting:</strong>I divided the dataset into three parts to ensure robust model performance: 70% for training, 15% for validation, and 15% for testing. This approach helps in training the model effectively, fine-tuning it, and evaluating its performance on unseen data.
 
 
 <h3> Step 1: Loading of Data and Understanding the Dataset </h3>
