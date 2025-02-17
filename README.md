@@ -4,6 +4,16 @@ In an age where sun safety is paramount, this project aims to provide individual
 
 By seamlessly integrating data from weather APIs and predictive modeling, UV Predictor & SPF Guide empowers users to make informed decisions about sun exposure and skin care, enhancing public health and awareness.
 
+<h3>What is UV Index?</h3>
+The UV Index is a measure of the strength of ultraviolet (UV) radiation from the sun at a particular place and time. It helps people understand the risk of overexposure to UV rays, which can lead to skin damage, sunburn, and an increased risk of skin cancer. The index ranges from 0 to 11+, with higher values indicating a greater risk of harm from unprotected sun exposure:
+
+- **0-2 (Low):** Minimal risk. No protection needed.
+- **3-5 (Moderate):** Moderate risk. Protection like sunglasses and sunscreen is advisable.
+- **6-7 (High):** High risk. Protection such as a hat, sunscreen, and shade is essential.
+- **8-10 (Very High):** Very high risk. Extra protection is needed to avoid serious damage.
+- **11+ (Extreme):** Extreme risk. Avoid the sun and seek shade, as unprotected exposure can cause skin and eye damage quickly.
+
+
 Please find the link to the App Here: 
 
 
