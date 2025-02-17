@@ -53,7 +53,7 @@ The data includes the following columns:
 ![Image](https://github.com/user-attachments/assets/d927b373-05bd-486e-91ac-a9417cb7e973)
 
 3. <strong>Correlation Matrix:</strong> Explores relationships that may exist between the numeric columns and the target variable UV Index.<br>
-![Image](https://github.com/user-attachments/assets/c0d66fa7-f02f-42e4-b013-3e9b622a59ea)"
+![Image](https://github.com/user-attachments/assets/c0d66fa7-f02f-42e4-b013-3e9b622a59ea)
 
 
 
