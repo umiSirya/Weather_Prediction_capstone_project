@@ -101,8 +101,8 @@ This heatmap provides a clear visual representation of UV exposure levels across
 
 
 <br>
-<br>
-**Weather Conditions Distribution:** The majority of weather conditions are partly cloudy (59.5%), followed by sunny (31.0%). Patchy rain nearby and moderate rain at times are both less frequent at 2.4%.
+<h3>Weather Conditions (Distribution/ Over Time)
+<strong>Weather Conditions Distribution:</strong> The majority of weather conditions are partly cloudy (59.5%), followed by sunny (31.0%). Patchy rain nearby and moderate rain at times are both less frequent at 2.4%.
 
 **Weather Conditions Over Time:** Sunny weather is consistently recorded, with partly cloudy conditions appearing frequently. Patchy rain and moderate rain appear less frequently, typically around specific time intervals.
 
