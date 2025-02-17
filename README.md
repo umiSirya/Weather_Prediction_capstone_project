@@ -85,15 +85,25 @@ Carbon Monoxide (CO) dominates, making up 89.7% of the total pollutants. PM10 an
 <br>
 
 ![Image](https://github.com/user-attachments/assets/93c62a16-3fda-484e-99bd-fbc5f54b9073)
+<br>
+The high concentration of Carbon Monoxide (CO) in Kenya's air pollution can be attributed to several factors:
+
+1. **Motor Vehicles:** A significant source of CO in Kenya is motor vehicle emissions, especially in urban areas where traffic congestion is common.
+2. **Indoor Cooking:** The use of traditional fuels and kerosene for cooking and heating in many households contributes to indoor air pollution, releasing CO.
+3. **Burning of Solid Waste:** The indiscriminate burning of solid waste, including plastics and other materials, releases CO and other pollutants into the air.
+4. **Industrial Activities:** Industries in urban areas also contribute to CO emissions due to the burning of fossil fuels.
+
+These factors combined result in CO being the major pollutant in Kenya's air pollution profile. Efforts to reduce CO levels would need to address these sources, such as improving vehicle emission standards, promoting cleaner cooking technologies, and better waste management practices.
+
 
 <br>
 <h3>UV Index Across Various Cities</h3>
 
 The heatmap titled "UV Index Across Various Cities" shows UV Index values for different cities at 7 PM. The key insights are:
 
-**Low UV Index:** Most cities have UV Index values ranging from 0.0 to 0.3, indicating very low UV radiation exposure in the evening.
-**Exception - Embu:** Embu has the highest UV Index value of 14.3, which is unusual .
-**Sparse Data:** Many cities do not have recorded UV Index values for the given time.
+**Low UV Index:** Most cities have UV Index values ranging from 0.0 to 0.3, indicating very low UV radiation exposure in the evening.<br>
+**Exception - Embu:** Embu has the highest UV Index value of 14.3, which is unusual .<br>
+**Sparse Data:** Many cities do not have recorded UV Index values for the given time.<br>
 This heatmap provides a clear visual representation of UV exposure levels across various locations at 7 PM, emphasizing generally low UV radiation during this time.
 <br>
 
