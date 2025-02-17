@@ -12,7 +12,39 @@ Excessive exposure to ultraviolet (UV) radiation is a significant public health 
 
 The project addresses this issue by providing accurate, city-specific UV index predictions and personalized sunscreen recommendations. By leveraging real-time weather data and advanced machine learning algorithms, the project empowers users to make informed decisions about their sun exposure and skin protection, ultimately promoting healthier lifestyles and reducing the risk of UV-related health problems.
 
-# <h2> Methodology </h2>
+# <h2> Data Overview</h2>
+The weather data used in this project is from: [https://www.weatherapi.com/](https://www.weatherapi.com/). 
+It contains comprehensive real-time weather information, and the target variable is the UV index. 
+The data includes the following columns:
+
+1. **City:** The name of the city.
+2. **Country:** The name of the country.
+3. **Latitude:** The geographic latitude of the city.
+4. **Longitude:** The geographic longitude of the city.
+5. **Local Time:** The current local time in the city.
+6. **Temperature (°C):** The current temperature in degrees Celsius.
+7. **Feels Like (°C):** The perceived temperature in degrees Celsius, considering factors like wind and humidity.
+8. **Humidity (%):** The percentage of humidity in the air.
+9. **Pressure (mb):** The atmospheric pressure in millibars.
+10. **Wind Speed (km/h):** The speed of the wind in kilometers per hour.
+11. **Wind Direction:** The direction from which the wind is blowing.
+12. **UV Index:** The ultraviolet index indicating the strength of UV radiation.
+13. **Visibility (km):** The distance one can see clearly, in kilometers.
+14. **Weather Condition:** A brief description of the current weather conditions (e.g., clear, cloudy).
+15. **Air Quality Index (US):** The air quality index based on US standards.
+16. **PM2.5:** The concentration of particulate matter less than 2.5 micrometers.
+17. **PM10:** The concentration of particulate matter less than 10 micrometers.
+18. **CO (Carbon Monoxide):** The concentration of carbon monoxide in the air.
+19. **NO2 (Nitrogen Dioxide):** The concentration of nitrogen dioxide in the air.
+20. **SO2 (Sulfur Dioxide):** The concentration of sulfur dioxide in the air.
+21. **Tomorrow's Max Temp (°C):** The maximum temperature forecasted for the next day in degrees Celsius.
+22. **Tomorrow's Min Temp (°C):** The minimum temperature forecasted for the next day in degrees Celsius.
+23. **Tomorrow's Condition:** The forecasted weather conditions for the next day.
+24. **Sunrise:** The local time of sunrise.
+25. **Sunset:** The local time of sunset.
+
+<h2>Exploratory Data analysis</h2>
+1. **Description of summary statistics for our numeric columns**: Provides an overview of the data by highlighting its range, spread, and potential outliers.
 <h3> Step 1: Loading of Data and Understanding the Dataset </h3>
 The first step is loading the data and understanding the dataset which involves reviewing the dataset's columns, types, and summary statistics to gain insights into the data.
 
