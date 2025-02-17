@@ -134,22 +134,20 @@ These charts highlight the dominance of partly cloudy and sunny conditions, with
 
 5. <strong>Data Splitting:</strong>I divided the dataset into three parts to ensure robust model performance: 70% for training, 15% for validation, and 15% for testing. This approach helps in training the model effectively, fine-tuning it, and evaluating its performance on unseen data.
 
+# <h2>Training the Model</h2>
+<strong>the LSTM (Long Short-Term Memory) model</strong> to predict the UV index is an excellent choice due to its ability to handle sequential and time-series data effectively. 
+Here's why:
 
-<h3> Step 1: Loading of Data and Understanding the Dataset </h3>
-The first step is loading the data and understanding the dataset which involves reviewing the dataset's columns, types, and summary statistics to gain insights into the data.
+**Ability to Capture Temporal Patterns:** UV index data is inherently time-dependent, and LSTM models excel at capturing temporal patterns and dependencies in sequential data.
 
-<h3> Step 2: Identify Key Attributes </h3>
-These are the most important features or columns that provide valuable information for analysis and model building.
+**Handling Long-Term Dependencies:** LSTMs are designed to remember long-term dependencies, which is crucial for accurate UV index predictions, as past UV patterns can significantly influence future values.
 
-<h3> Step 3: EDA - Exploring the Dataset </h3>
-EDA involves visually and statistically exploring a dataset to uncover patterns, trends, and relationships.
+**Robustness to Noise and Variability:** The UV index can exhibit high variability due to factors like weather conditions and geographical changes. LSTMs are robust to such noise and can learn the underlying trends effectively.
 
-<h3> Step 4: Data Preprocessing </h3>
-Data preprocessing involves cleaning, transforming, and organizing raw data into a format that can be effectively used for analysis and model building. Some of the steps include checking for missing values, encoding, feature engineering among others.
+**Better Performance:** LSTMs often outperform traditional models in time-series forecasting tasks, leading to more accurate and reliable UV index predictions.
 
-<h3> Step 6:</h3>
+<h3> Evaluation Metrics</h3>
 
-<h3> Step 7:</h3>
 
-<h3>Next Steps - Deploying UV Monitor & Sunscreen Guide</h3>
-The next phase of my project involves deploying the UV Predictor & SPF Guide using Streamlit to create an interactive and user-friendly interface. Streamlit will enable users to input their city and receive real-time UV index predictions along with personalized sunscreen recommendations. By leveraging this platform, we aim to enhance accessibility and ensure users can make informed decisions about their sun protection with ease.
+# <h2>Final Stage - Deploying UV Monitor & Sunscreen Guide</h3>
+The last phase of my project involves deploying the UV Predictor & SPF Guide using Streamlit to create an interactive and user-friendly interface. Streamlit will enable users to input their city(City in Kenya) and receive real-time UV index predictions along with personalized sunscreen recommendations. By leveraging this platform, I aim to enhance accessibility and ensure users can make informed decisions about their sun protection with ease.
