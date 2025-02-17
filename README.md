@@ -135,7 +135,7 @@ These charts highlight the dominance of partly cloudy and sunny conditions, with
 5. <strong>Data Splitting:</strong>I divided the dataset into three parts to ensure robust model performance: 70% for training, 15% for validation, and 15% for testing. This approach helps in training the model effectively, fine-tuning it, and evaluating its performance on unseen data.
 
 # <h2>Training the Model</h2>
-<strong>the LSTM (Long Short-Term Memory) model</strong> to predict the UV index is an excellent choice due to its ability to handle sequential and time-series data effectively. 
+I went with <h2>The LSTM (Long Short-Term Memory) model</h2> to predict the UV index is an excellent choice due to its ability to handle sequential and time-series data effectively. 
 Here's why:
 
 **Ability to Capture Temporal Patterns:** UV index data is inherently time-dependent, and LSTM models excel at capturing temporal patterns and dependencies in sequential data.
