@@ -74,32 +74,36 @@ The data includes the following columns:
 ![Image](https://github.com/user-attachments/assets/0cbb0acf-d3b7-48c6-8659-d91df4085abd)
 
 <br>
-
-![Image](https://github.com/user-attachments/assets/93c62a16-3fda-484e-99bd-fbc5f54b9073)
 <br>
 Carbon Monoxide (CO) dominates, making up 89.7% of the total pollutants. PM10 and PM2.5 contribute 5.4% and 4.3%, respectively. Both Sulfur Dioxide (SO2) and Nitrogen Dioxide (NO2) are minimal, each accounting for 0.3%. This indicates that CO is the major pollutant in the given data set.
 <br>
-<br>
 
-![Image](https://github.com/user-attachments/assets/7ae24fae-5f33-46d9-bb2d-59bf34132cea)
+![Image](https://github.com/user-attachments/assets/93c62a16-3fda-484e-99bd-fbc5f54b9073)
 
 <br>
- The heatmap titled "UV Index Across Various Cities" shows UV Index values for different cities at 7 PM. The key insights are:
+<br>
+The heatmap titled "UV Index Across Various Cities" shows UV Index values for different cities at 7 PM. The key insights are:
 
 **Low UV Index:** Most cities have UV Index values ranging from 0.0 to 0.3, indicating very low UV radiation exposure in the evening.
 **Exception - Embu:** Embu has the highest UV Index value of 14.3, which is unusual .
 **Sparse Data:** Many cities do not have recorded UV Index values for the given time.
 This heatmap provides a clear visual representation of UV exposure levels across various locations at 7 PM, emphasizing generally low UV radiation during this time.
 <br>
-<br>
 
-![Image](https://github.com/user-attachments/assets/7c69a5cb-ac79-4949-832d-40c93cbd2dae)
+![Image](https://github.com/user-attachments/assets/7ae24fae-5f33-46d9-bb2d-59bf34132cea)
+
+
+<br>
 <br>
 **Weather Conditions Distribution:** The majority of weather conditions are partly cloudy (59.5%), followed by sunny (31.0%). Patchy rain nearby and moderate rain at times are both less frequent at 2.4%.
 
 **Weather Conditions Over Time:** Sunny weather is consistently recorded, with partly cloudy conditions appearing frequently. Patchy rain and moderate rain appear less frequently, typically around specific time intervals.
 
 These charts highlight the dominance of partly cloudy and sunny conditions, with occasional rain events during specific times.
+
+![Image](https://github.com/user-attachments/assets/7c69a5cb-ac79-4949-832d-40c93cbd2dae)
+<br>
+
 
 # <h2>Data PreProcessing</h2>
 1. **Dropped Columns:** We dropped several columns that were deemed unnecessary for our analysis. These columns included 'Country', 'Local Time', 'Visibility (km)', 'Weather Condition', 'Tomorrow's Condition', 'Wind Direction', 'Longitude', and 'Latitude'. This was done to reduce the complexity of the dataset and focus on the most relevant features.
