@@ -53,22 +53,28 @@ The data includes the following columns:
 ![Image](https://github.com/user-attachments/assets/c0d66fa7-f02f-42e4-b013-3e9b622a59ea)
 
 # <h2>Visualisations</h2>
-![Image](https://github.com/user-attachments/assets/8a92c8e8-d0ae-463f-92fa-30adffd4927c)
 <br>
 **Sunny:** This weather condition has the highest frequency, with approximately 35 occurrences. It indicates that sunny weather is the most likely condition for tomorrow.
 **Patchy Rain Nearby:** This weather condition has a moderate frequency, with around 10 occurrences. It suggests that there will be some areas experiencing patchy rain.
 **Partly Cloudy:** This weather condition has the lowest frequency, with approximately 5 occurrences. It indicates that partly cloudy conditions are less common compared to sunny and patchy rain nearby.
 <br>
+
+![Image](https://github.com/user-attachments/assets/8a92c8e8-d0ae-463f-92fa-30adffd4927c)
+
+**Lodwar** has the highest average temperature, above 35°C.<br>
+**Garissa** and **Wajir** follow with temperatures above 35°C.<br>
+**Taita** has the lowest average temperature, below 15°C.<br>
+
 ![Image](https://github.com/user-attachments/assets/0cbb0acf-d3b7-48c6-8659-d91df4085abd)
 
-**Lodwar** has the highest average temperature, above 35°C.
-**Garissa** and **Wajir** follow with temperatures above 35°C.
-**Taita** has the lowest average temperature, below 15°C.
 <br>
 ![Image](https://github.com/user-attachments/assets/93c62a16-3fda-484e-99bd-fbc5f54b9073)
  Carbon Monoxide (CO) dominates, making up 89.7% of the total pollutants. PM10 and PM2.5 contribute 5.4% and 4.3%, respectively. Both Sulfur Dioxide (SO2) and Nitrogen Dioxide (NO2) are minimal, each accounting for 0.3%. This indicates that CO is the major pollutant in the given data set.
 <br>
+
 ![Image](https://github.com/user-attachments/assets/7ae24fae-5f33-46d9-bb2d-59bf34132cea)
+
+<br>
  The heatmap titled "UV Index Across Various Cities" shows UV Index values for different cities at 7 PM. The key insights are:
 
 **Low UV Index:** Most cities have UV Index values ranging from 0.0 to 0.3, indicating very low UV radiation exposure in the evening.
