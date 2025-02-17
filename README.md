@@ -59,11 +59,14 @@ The data includes the following columns:
 
 # <h2>Visualisations</h2>
 <br>
+<h3> Distribution of Tomorrow's weather Condition</h3>
+<br>
 <strong>Sunny:</strong>This weather condition has the highest frequency, with approximately 35 occurrences. It indicates that sunny weather is the most likely condition for tomorrow.<br>
 <strong>Patchy Rain Nearby:</strong>This weather condition has a moderate frequency, with around 10 occurrences. It suggests that there will be some areas experiencing patchy rain.<br>
 <strong>Partly Cloudy:</strong> This weather condition has the lowest frequency, with approximately 5 occurrences. It indicates that partly cloudy conditions are less common compared to sunny and patchy rain nearby.
 <br>
 <br>
+<h3>Temperatures across cities in Kenya</h3>
 
 ![Image](https://github.com/user-attachments/assets/8a92c8e8-d0ae-463f-92fa-30adffd4927c)
 
