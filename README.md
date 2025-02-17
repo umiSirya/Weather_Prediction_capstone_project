@@ -53,14 +53,14 @@ The data includes the following columns:
 ![Image](https://github.com/user-attachments/assets/d927b373-05bd-486e-91ac-a9417cb7e973)
 
 3. <strong>Correlation Matrix:</strong> Explores relationships that may exist between the numeric columns and the target variable UV Index.<br>
-<img src="![Image](https://github.com/user-attachments/assets/c0d66fa7-f02f-42e4-b013-3e9b622a59ea)" width="500" height="300">
+![Image](https://github.com/user-attachments/assets/c0d66fa7-f02f-42e4-b013-3e9b622a59ea)"
 
 
 
 # <h2>Visualisations</h2>
 <br>
-<strong>Sunny:</strong>This weather condition has the highest frequency, with approximately 35 occurrences. It indicates that sunny weather is the most likely condition for tomorrow.
-<strong>Patchy Rain Nearby:</strong>This weather condition has a moderate frequency, with around 10 occurrences. It suggests that there will be some areas experiencing patchy rain.
+<strong>Sunny:</strong>This weather condition has the highest frequency, with approximately 35 occurrences. It indicates that sunny weather is the most likely condition for tomorrow.<br>
+<strong>Patchy Rain Nearby:</strong>This weather condition has a moderate frequency, with around 10 occurrences. It suggests that there will be some areas experiencing patchy rain.<br>
 <strong>Partly Cloudy:</strong> This weather condition has the lowest frequency, with approximately 5 occurrences. It indicates that partly cloudy conditions are less common compared to sunny and patchy rain nearby.
 <br>
 <br>
