@@ -66,9 +66,10 @@ The data includes the following columns:
 <strong>Partly Cloudy:</strong> This weather condition has the lowest frequency, with approximately 5 occurrences. It indicates that partly cloudy conditions are less common compared to sunny and patchy rain nearby.
 <br>
 <br>
-<h3>Temperatures across cities in Kenya</h3>
 
 ![Image](https://github.com/user-attachments/assets/8a92c8e8-d0ae-463f-92fa-30adffd4927c)
+<br>
+<h3>Temperatures across cities in Kenya</h3>
 
 **Lodwar** has the highest average temperature, above 35°C.<br>
 **Garissa** and **Wajir** follow with temperatures above 35°C.<br>
