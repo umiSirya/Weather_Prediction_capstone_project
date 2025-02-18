@@ -101,7 +101,7 @@ These factors combined result in CO being the major pollutant in Kenya's air pol
 
 The heatmap titled "UV Index Across Various Cities" shows UV Index values for different cities at 7 PM. 
 
-The key insights are:
+The key insights are:<br>
 **Low UV Index:** Most cities have UV Index values ranging from 0.0 to 0.3, indicating very low UV radiation exposure in the evening.<br>
 **Exception - Embu:** Embu has the highest UV Index value of 14.3, which is unusual .<br>
 **Sparse Data:** Many cities do not have recorded UV Index values for the given time.<br>
