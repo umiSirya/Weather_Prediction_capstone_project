@@ -112,6 +112,21 @@ This heatmap provides a clear visual representation of UV exposure levels across
 
 
 <br>
+The heatmap titled "UV Index Across Various Cities" shows UV Index values for different cities at 3:30PM. 
+
+1. **Highest UV Index:** Homa Bay, Kisumu, and Nakuru have consistently high UV Index values between 9.0 to 9.4.
+2. **Lowest UV Index:** The lowest UV Index recorded is 0.0 at Thika.
+3. **Moderate UV Index:** Embu has a UV Index of 5.3, which is moderate.
+4. **Very High UV Exposure:** Several cities have UV Index values above 8.0, indicating very high UV exposure.
+
+I've noticed an intriguing pattern in Embu's UV Index readings. During the day, the UV Index tends to be relatively low, which is unexpected considering daytime UV levels are usually higher. Surprisingly, at night, the UV Index spikes to a remarkably high value of 14.3. This anomaly suggests that atmospheric conditions in Embu might be affecting UV radiation levels in unusual ways, and it's worth investigating further to understand the underlying causes. Whether it's cloud cover, air quality, or other environmental factors, something unique is at play here.
+
+<br>
+
+![Image](https://github.com/user-attachments/assets/c84ec5b3-2e15-4d4d-9e56-3effa35c7f29)
+
+<br>
+
 <h3>Weather Conditions (Distribution/ Over Time)</h3>
 <strong>Weather Conditions Distribution:</strong> The majority of weather conditions are partly cloudy (59.5%), followed by sunny (31.0%). Patchy rain nearby and moderate rain at times are both less frequent at 2.4%.
 
