@@ -150,7 +150,7 @@ These charts highlight the dominance of partly cloudy and sunny conditions, with
 5. <strong>Data Splitting:</strong>I divided the dataset into three parts to ensure robust model performance: 70% for training, 15% for validation, and 15% for testing. This approach helps in training the model effectively, fine-tuning it, and evaluating its performance on unseen data.
 
 # <h2>Training the Model</h2>
-I went with <h2>The LSTM (Long Short-Term Memory) model</h2> to predict the UV index is an excellent choice due to its ability to handle sequential and time-series data effectively. 
+I went with <strong>The LSTM (Long Short-Term Memory) model</strong> to predict the UV index is an excellent choice due to its ability to handle sequential and time-series data effectively. 
 Here's why:
 
 **Ability to Capture Temporal Patterns:** UV index data is inherently time-dependent, and LSTM models excel at capturing temporal patterns and dependencies in sequential data.
@@ -162,7 +162,17 @@ Here's why:
 **Better Performance:** LSTMs often outperform traditional models in time-series forecasting tasks, leading to more accurate and reliable UV index predictions.
 
 <h3> Evaluation Metrics</h3>
-
+To evaluate the performance of my model, I use the Mean Squared Error (MSE) metric. MSE measures the average squared difference between the actual and predicted values, providing a clear indication of the model's accuracy. By minimizing the MSE, I aim to enhance the model's predictive capabilities and ensure robust performance.
+<br>
+<img width="220" alt="Image" src="https://github.com/user-attachments/assets/36b91218-c768-4e0f-b474-ce561cec8f7d" />
+<br>
 
 # <h2>Final Stage - Deploying UV Monitor & Sunscreen Guide</h3>
 The last phase of my project involves deploying the UV Predictor & SPF Guide using Streamlit to create an interactive and user-friendly interface. Streamlit will enable users to input their city(City in Kenya) and receive real-time UV index predictions along with personalized sunscreen recommendations. By leveraging this platform, I aim to enhance accessibility and ensure users can make informed decisions about their sun protection with ease.
+
+# <h2>Stakeholders</h2>
+The stakeholders for such a real world project would be:-
+<br>
+1. <strong>Healthcare Providers:</strong> Dermatologists and general practitioners who could use the information to advise their patients on sun safety.
+2. <strong>Consumers:</strong> Individuals who want to protect their skin from UV damage and are looking for personalized sunscreen recommendations.
+3. <strong>Sunscreen Manufacturers:</strong> Companies that produce sunscreen products and could use the data to market their products more effectively.
