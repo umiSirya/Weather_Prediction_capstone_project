@@ -37,9 +37,8 @@ The data includes the following columns:
 20. agency: Organization responsible for collecting or verifying the data.
 
 <h2>Exploratory Data analysis</h2>
-1. <strong>Description of summary statistics for our numeric columns:</strong>  Provides an overview of the data by highlighting its range, spread, and potential outliers<br>
-<img width="838" alt="Image" src="https://github.com/user-attachments/assets/b3330b6a-eb06-4c44-a21a-44d05d1af415" />
-<br>
+1. <strong>Note</strong><br>
+I dropped all the other columns in the dataset and decided to work with only the **uv_index_daily_max** because it represents the highest UV exposure level for the day, making it the most relevant feature for my analysis. Since my goal is to predict the UV index and recommend appropriate sunscreen based on the peak exposure, keeping additional variables that do not directly contribute to this prediction would add unnecessary complexity. By focusing solely on **uv_index_daily_max**, I can streamline the modeling process, reduce noise in the data, and improve the efficiency and interpretability of my machine-learning model.<br>
 <br>
 2.<strong>Distribution plots for the numeric columns:</strong> Visualize how values are distributed across numeric columns revealing skewness and the presence of outliers.<br> 
 
