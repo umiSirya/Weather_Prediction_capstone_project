@@ -1,47 +1,40 @@
 # UV Monitor & Sunscreen Guide
 # <h2> Project Overview </h2>
-In an age where sun safety is paramount, this project aims to provide individuals with accurate and timely predictions of UV index levels based on their city. Utilizing advanced machine learning algorithms, this project analyzes real-time weather data to forecast UV index levels. Additionally, it offers personalized sunscreen recommendations to ensure optimal skin protection.
+In an age where sun safety is paramount, this project aims to provide individuals with accurate and timely predictions of UV index levels based on their country. Utilizing advanced machine learning algorithms, this project analyzes real-time weather data to forecast UV index levels. Additionally, it offers personalized sunscreen recommendations to ensure optimal skin protection.
 
 By seamlessly integrating data from weather APIs and predictive modeling, UV Predictor & SPF Guide empowers users to make informed decisions about sun exposure and skin care, enhancing public health and awareness.
-
-Please find the link to the App Here: 
 
 
 # <h2> Problem Statement </h2>
 Excessive exposure to ultraviolet (UV) radiation is a significant public health concern, leading to increased risks of skin cancer, sunburns, and other harmful effects on human health. While UV radiation levels fluctuate based on location, time of day, and weather conditions, many individuals lack the awareness and tools to effectively manage their sun exposure. This gap in knowledge and accessibility results in preventable health issues and decreased quality of life.
 
-The project addresses this issue by providing accurate, city-specific UV index predictions and personalized sunscreen recommendations. By leveraging real-time weather data and advanced machine learning algorithms, the project empowers users to make informed decisions about their sun exposure and skin protection, ultimately promoting healthier lifestyles and reducing the risk of UV-related health problems.
+The project addresses this issue by providing accurate, UV index predictions and personalized sunscreen recommendations. By leveraging historical weather data and advanced machine learning algorithms, the project empowers users to make informed decisions about their sun exposure and skin protection, ultimately promoting healthier lifestyles and reducing the risk of UV-related health problems.
 
 # <h2> Data Overview</h2>
-The weather data used in this project is from: [https://www.weatherapi.com/](https://www.weatherapi.com/). 
+The weather data used in this project is from: https://woudc.org/data/explore.php?lang=en. 
 It contains comprehensive real-time weather information, and the target variable is the UV index. 
 The data includes the following columns:
 
-1. **City:** The name of the city.
-2. **Country:** The name of the country.
-3. **Latitude:** The geographic latitude of the city.
-4. **Longitude:** The geographic longitude of the city.
-5. **Local Time:** The current local time in the city.
-6. **Temperature (°C):** The current temperature in degrees Celsius.
-7. **Feels Like (°C):** The perceived temperature in degrees Celsius, considering factors like wind and humidity.
-8. **Humidity (%):** The percentage of humidity in the air.
-9. **Pressure (mb):** The atmospheric pressure in millibars.
-10. **Wind Speed (km/h):** The speed of the wind in kilometers per hour.
-11. **Wind Direction:** The direction from which the wind is blowing.
-12. **UV Index:** The ultraviolet index indicating the strength of UV radiation.
-13. **Visibility (km):** The distance one can see clearly, in kilometers.
-14. **Weather Condition:** A brief description of the current weather conditions (e.g., clear, cloudy).
-15. **Air Quality Index (US):** The air quality index based on US standards.
-16. **PM2.5:** The concentration of particulate matter less than 2.5 micrometers.
-17. **PM10:** The concentration of particulate matter less than 10 micrometers.
-18. **CO (Carbon Monoxide):** The concentration of carbon monoxide in the air.
-19. **NO2 (Nitrogen Dioxide):** The concentration of nitrogen dioxide in the air.
-20. **SO2 (Sulfur Dioxide):** The concentration of sulfur dioxide in the air.
-21. **Tomorrow's Max Temp (°C):** The maximum temperature forecasted for the next day in degrees Celsius.
-22. **Tomorrow's Min Temp (°C):** The minimum temperature forecasted for the next day in degrees Celsius.
-23. **Tomorrow's Condition:** The forecasted weather conditions for the next day.
-24. **Sunrise:** The local time of sunrise.
-25. **Sunset:** The local time of sunset.
+1. Y: Latitude (in decimal degrees).
+2. X: Longitude (in decimal degrees).
+3. uv_index_hourly_average: The hourly average UV index measurement.
+4. url: A link providing more details about the observation.
+5. dataset: Identifier for the dataset source.
+6. instance_datetime: Timestamp when the measurement was taken.
+7. platform_id: Unique ID for the measuring station.
+8. platform_name: Name of the station or platform.
+9. country: Country where the measurement was recorded.
+10. gaw_id: Global Atmosphere Watch identifier for the station.
+11. instrument_name: Name of the instrument used to measure UV.
+12. instrument_model: Model designation of the instrument.
+13. instrument_number: Numeric identifier for the instrument.
+14. uv_index_qa: Quality assurance flag for the UV index measurement.
+15. instance_hour: The hour (0–23) when the observation was made.
+16. platform_type: Type of station (e.g., fixed, mobile).
+17. data_payload_id: Unique identifier for the data submission batch.
+18. latest_observation: Flag indicating if it’s the most recent observation.
+19. uv_index_daily_max: The maximum UV index recorded during the day.
+20. agency: Organization responsible for collecting or verifying the data.
 
 <h2>Exploratory Data analysis</h2>
 1. <strong>Description of summary statistics for our numeric columns:</strong>  Provides an overview of the data by highlighting its range, spread, and potential outliers<br>
