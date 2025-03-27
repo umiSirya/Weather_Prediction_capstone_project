@@ -107,6 +107,7 @@ Differencing is applied ( d ) times until the series becomes stationary.</li>
 <li>Uses past forecast errors to improve predictions.
 If q = 1, the model includes the last error term.</li>
 </ul>
+
 <h3>How ARIMA Works</h3>
 1. Make the Series Stationary
 <ul>
