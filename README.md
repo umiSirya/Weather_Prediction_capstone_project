@@ -38,104 +38,22 @@ The data includes the following columns:
 
 <h2>Exploratory Data analysis</h2>
 <strong>Note</strong><br>
-I dropped all the other columns in the dataset and decided to work with only the <strong>uv_index_daily_max</strong> because it represents the highest UV exposure level for the day, making it the most relevant feature for my analysis. Since my goal is to predict the UV index and recommend appropriate sunscreen based on the peak exposure, keeping additional variables that do not directly contribute to this prediction would add unnecessary complexity. By focusing solely on <strong>uv_index_daily_max</strong>, I can streamline the modeling process, reduce noise in the data, and improve the efficiency and interpretability of my machine-learning model.<br>
+I dropped all the other columns in the dataset and decided to work with only the <strong>uv_index_daily_max and the date</strong> because it represents the highest UV exposure level for the day, making it the most relevant feature for my analysis. Since my goal is to predict the UV index and recommend appropriate sunscreen based on the peak exposure, keeping additional variables that do not directly contribute to this prediction would add unnecessary complexity. By focusing solely on <strong>uv_index_daily_max</strong>, I can streamline the modeling process, reduce noise in the data, and improve the efficiency and interpretability of my machine-learning model.<br>
+<strong>UV Index Statistics</strong><br>
+<img width="140" alt="Image" src="https://github.com/user-attachments/assets/0338001d-6843-4a03-874c-94656012d1c6" /><br>
 <br>
-2.<strong>Distribution plot for uv_index_daily_max:</strong> Visualize how values are distributed across numeric columns revealing skewness and the presence of outliers.<br> 
+This summary suggests that most UV index values are relatively low, with a maximum of 3.44, which is moderate to low UV exposure.
+
+<br>
+<strong>Distribution plot for uv_index_daily_max:</strong> Visualize how values are distributed across numeric columns revealing skewness and the presence of outliers.<br> 
 
 ![Image](https://github.com/user-attachments/assets/65669800-ca5b-4048-977f-f9eaf8cd8a0e)
 
-
-# <h2>Visualisations</h2>
-<br>
-<h3> Distribution of Tomorrow's weather Condition</h3>
-<br>
-<strong>Sunny:</strong>This weather condition has the highest frequency, with approximately 35 occurrences. It indicates that sunny weather is the most likely condition for tomorrow.<br>
-<strong>Patchy Rain Nearby:</strong>This weather condition has a moderate frequency, with around 10 occurrences. It suggests that there will be some areas experiencing patchy rain.<br>
-<strong>Partly Cloudy:</strong> This weather condition has the lowest frequency, with approximately 5 occurrences. It indicates that partly cloudy conditions are less common compared to sunny and patchy rain nearby.
-<br>
-<br>
-
-![Image](https://github.com/user-attachments/assets/8a92c8e8-d0ae-463f-92fa-30adffd4927c)
-<br>
-<h3>Temperatures across cities in Kenya</h3>
-
-**Lodwar** has the highest average temperature, above 35°C.<br>
-**Garissa** and **Wajir** follow with temperatures above 35°C.<br>
-**Taita** has the lowest average temperature, below 15°C.<br>
-
-![Image](https://github.com/user-attachments/assets/0cbb0acf-d3b7-48c6-8659-d91df4085abd)
-
-<br>
-<h3>Propotions of Different Pollutants</h3>
-
-Carbon Monoxide (CO) dominates, making up 89.7% of the total pollutants. PM10 and PM2.5 contribute 5.4% and 4.3%, respectively. Both Sulfur Dioxide (SO2) and Nitrogen Dioxide (NO2) are minimal, each accounting for 0.3%. This indicates that CO is the major pollutant in the given data set.
-
-<br>
-
-![Image](https://github.com/user-attachments/assets/93c62a16-3fda-484e-99bd-fbc5f54b9073)
-<br>
-The high concentration of Carbon Monoxide (CO) in Kenya's air pollution can be attributed to several factors:
-
-1. **Motor Vehicles:** A significant source of CO in Kenya is motor vehicle emissions, especially in urban areas where traffic congestion is common.
-2. **Indoor Cooking:** The use of traditional fuels and kerosene for cooking and heating in many households contributes to indoor air pollution, releasing CO.
-3. **Burning of Solid Waste:** The indiscriminate burning of solid waste, including plastics and other materials, releases CO and other pollutants into the air.
-4. **Industrial Activities:** Industries in urban areas also contribute to CO emissions due to the burning of fossil fuels.
-
-These factors combined result in CO being the major pollutant in Kenya's air pollution profile. Efforts to reduce CO levels would need to address these sources, such as improving vehicle emission standards, promoting cleaner cooking technologies, and better waste management practices.
+# <h2>Data Analysis</h2>
 
 
-<br>
-<h3>UV Index Across Various Cities</h3>
 
-The heatmap titled "UV Index Across Various Cities" shows UV Index values for different cities at 7 PM. 
-
-The key insights are:<br>
-**Low UV Index:** Most cities have UV Index values ranging from 0.0 to 0.3, indicating very low UV radiation exposure in the evening.<br>
-**Exception - Embu:** Embu has the highest UV Index value of 14.3, which is unusual .<br>
-**Sparse Data:** Many cities do not have recorded UV Index values for the given time.<br>
-This heatmap provides a clear visual representation of UV exposure levels across various locations at 7 PM, emphasizing generally low UV radiation during this time.
-<br>
-
-![Image](https://github.com/user-attachments/assets/7ae24fae-5f33-46d9-bb2d-59bf34132cea)
-
-
-<br>
-The heatmap titled "UV Index Across Various Cities" shows UV Index values for different cities at 3:30PM. 
-
-1. **Highest UV Index:** Homa Bay, Kisumu, and Nakuru have consistently high UV Index values between 9.0 to 9.4.
-2. **Lowest UV Index:** The lowest UV Index recorded is 0.0 at Thika.
-3. **Moderate UV Index:** Embu has a UV Index of 5.3, which is moderate.
-4. **Very High UV Exposure:** Several cities have UV Index values above 8.0, indicating very high UV exposure.
-
-I've noticed an intriguing pattern in Embu's UV Index readings. During the day, the UV Index tends to be relatively low, which is unexpected considering daytime UV levels are usually higher. Surprisingly, at night, the UV Index spikes to a remarkably high value of 14.3. This anomaly suggests that atmospheric conditions in Embu might be affecting UV radiation levels in unusual ways, and it's worth investigating further to understand the underlying causes. Whether it's cloud cover, air quality, or other environmental factors, something unique is at play here.
-
-<br>
-
-![Image](https://github.com/user-attachments/assets/c84ec5b3-2e15-4d4d-9e56-3effa35c7f29)
-
-<br>
-
-<h3>Weather Conditions (Distribution/ Over Time)</h3>
-<strong>Weather Conditions Distribution:</strong> The majority of weather conditions are partly cloudy (59.5%), followed by sunny (31.0%). Patchy rain nearby and moderate rain at times are both less frequent at 2.4%.
-
-**Weather Conditions Over Time:** Sunny weather is consistently recorded, with partly cloudy conditions appearing frequently. Patchy rain and moderate rain appear less frequently, typically around specific time intervals.
-
-These charts highlight the dominance of partly cloudy and sunny conditions, with occasional rain events during specific times.
-
-![Image](https://github.com/user-attachments/assets/7c69a5cb-ac79-4949-832d-40c93cbd2dae)
-<br>
-
-
-# <h2>Data PreProcessing</h2>
-1. **Dropped Columns:** We dropped several columns that were deemed unnecessary for our analysis. These columns included 'Country', 'Local Time', 'Visibility (km)', 'Weather Condition', 'Tomorrow's Condition', 'Wind Direction', 'Longitude', and 'Latitude'. This was done to reduce the complexity of the dataset and focus on the most relevant features.
-
-2. **Sunrise and Sunset Conversion:** The 'Sunrise' and 'Sunset' columns, initially represented in time format, were converted to numerical features. Specifically, we calculated the minutes since midnight for both 'Sunrise' and 'Sunset' times. This transformation allows for easier integration into machine learning models.
-
-3. **Encoding:** Label encoding was used for the 'City' column, which contains categorical data representing different cities.
-
-4. **Feature Scaling:** Standard Scaling was applied to all features except the 'UV Index' to normalize the data. The 'UV Index' was also standardized to ensure consistency in the data scaling process.
-
-5. <strong>Data Splitting:</strong>I divided the dataset into three parts to ensure robust model performance: 70% for training, 15% for validation, and 15% for testing. This approach helps in training the model effectively, fine-tuning it, and evaluating its performance on unseen data.
+# <h2>Data Pre-Processing</h2>
 
 # <h2>Training the Model</h2>
 I went with <strong>The LSTM (Long Short-Term Memory) model</strong> to predict the UV index is an excellent choice due to its ability to handle sequential and time-series data effectively. 
