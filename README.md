@@ -64,17 +64,17 @@ This summary suggests that most UV index values are relatively low, with a maxim
 # <h2>Data Pre-Processing</h2>
 To prepare the dataset for analysis and model training, the following preprocessing steps were performed:
 
-      <strong>Feature Scalling:</strong> Since the 'Close' prices was not normally distributed, I applied the Min-Max Scaler to normalize the data. This transformed the 
-              values into a range between 0 and 1, ensuring the model could better learn from the data.
+<strong>Feature Scalling:</strong> Since the 'Close' prices was not normally distributed, I applied the Min-Max Scaler to normalize the data. This transformed the 
+          values into a range between 0 and 1, ensuring the model could better learn from the data.
 <strong>Data Splitting</strong>
 Chronological Order:
 Data is sorted by date to preserve temporal relationships.
 
 80/20 Split:
 
-          Training Set (80%): Earliest data for model learning.
+  Training Set (80%): Earliest data for model learning.
 
-          Test Set (20%): Most recent data for evaluation.
+  Test Set (20%): Most recent data for evaluation.
 # <h2>Training the Model</h2>
 I went with <strong>The LSTM (Long Short-Term Memory) model</strong> to predict the UV index is an excellent choice due to its ability to handle sequential and time-series data effectively. 
 Here's why:
