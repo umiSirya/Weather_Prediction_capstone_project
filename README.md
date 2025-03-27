@@ -46,11 +46,15 @@ This summary suggests that most UV index values are relatively low, with a maxim
 
 <br>
 <strong>Distribution plot for uv_index_daily_max:</strong> Visualize how values are distributed across numeric columns revealing skewness and the presence of outliers.<br> 
+<br>
 
-![Image](https://github.com/user-attachments/assets/65669800-ca5b-4048-977f-f9eaf8cd8a0e)
+![Image](https://github.com/user-attachments/assets/aae3a3e0-2f96-4033-8231-47814c469d02)
 
+<br>
 # <h2>Data Analysis</h2>
+
 ![Image](https://github.com/user-attachments/assets/264d2d93-f429-4ab5-91e4-3ff6b9717607)
+
 <br>
 <strong>Seasonal Pattern</strong> – The UV index follows a cyclical pattern, with peaks occurring approximately once per year. This suggests that UV radiation levels are higher during specific seasons, likely summer.
 
@@ -84,9 +88,37 @@ My approach involves testing and comparing several types of models to determine 
 <li>Deep Learning Models:</li> Long Short Term Memory (LSTM)
                          Leverage recurrent neural networks to capture long-term dependencies in sequential data.
 </ul>
-# <h2>Final Stage - Deploying UV Monitor & Sunscreen Guide</h3>
-The last phase of my project involves deploying the UV Predictor & SPF Guide using Streamlit to create an interactive and user-friendly interface. Streamlit will enable users to input their city(City in Kenya) and receive real-time UV index predictions along with personalized sunscreen recommendations. By leveraging this platform, I aim to enhance accessibility and ensure users can make informed decisions about their sun protection with ease.
+# <h2>Time series Model</h2>
+<strong>Autoregressive Integrated Moving Average (ARIMA)</strong>
+The ARIMA model is a popular statistical method used for time series forecasting. It captures patterns in time series data by combining three components.
 
+1. AutoRegressive (AR) Component (p)
+<ul>
+<li>Uses past values of the series to predict the next value.
+If p = 2, the current value depends on the last two values.</li>
+2. Integrated (I) Component (d)
+
+Ensures the time series is stationary (constant mean and variance over time).
+Differencing is applied ( d ) times until the series becomes stationary.
+3. Moving Average (MA) Component (q)
+
+Uses past forecast errors to improve predictions.
+If q = 1, the model includes the last error term:
+How ARIMA Works
+Make the Series Stationary
+
+Check for trends or seasonality.
+Apply differencing if necessary.
+Select ARIMA Parameters (p, d, q)
+
+Use Autocorrelation Function (ACF) and Partial Autocorrelation Function (PACF) plots.
+Fit the Model
+
+Train ARIMA on historical data.
+Make Forecasts
+
+Once trained, use the model to predict future values.
+</ul>
 # <h2>Stakeholders</h2>
 The stakeholders for such a real world project would be:-
 <br>
