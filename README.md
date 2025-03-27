@@ -64,7 +64,7 @@ This summary suggests that most UV index values are relatively low, with a maxim
 # <h2>Data Pre-Processing</h2>
 To prepare the dataset for analysis and model training, the following preprocessing steps were performed:
 
-<strong>Feature Scalling:</strong> Since the 'Close' prices was not normally distributed, I applied the Min-Max Scaler to normalize the data. This transformed the 
+<strong>Feature Scalling:</strong> Since the UV Index was not normally distributed, I applied the Min-Max Scaler to normalize the data. This transformed the 
           values into a range between 0 and 1, ensuring the model could better learn from the data.
 <strong>Data Splitting</strong>
 Chronological Order:
@@ -75,24 +75,15 @@ Data is sorted by date to preserve temporal relationships.
   Training Set (80%): Earliest data for model learning.
 
   Test Set (20%): Most recent data for evaluation.
-# <h2>Training the Model</h2>
-I went with <strong>The LSTM (Long Short-Term Memory) model</strong> to predict the UV index is an excellent choice due to its ability to handle sequential and time-series data effectively. 
-Here's why:
+# <h2>Model Development</h2>
+My approach involves testing and comparing several types of models to determine the best fit for cryptocurrency price prediction:
 
-**Ability to Capture Temporal Patterns:** UV index data is inherently time-dependent, and LSTM models excel at capturing temporal patterns and dependencies in sequential data.
-
-**Handling Long-Term Dependencies:** LSTMs are designed to remember long-term dependencies, which is crucial for accurate UV index predictions, as past UV patterns can significantly influence future values.
-
-**Robustness to Noise and Variability:** The UV index can exhibit high variability due to factors like weather conditions and geographical changes. LSTMs are robust to such noise and can learn the underlying trends effectively.
-
-**Better Performance:** LSTMs often outperform traditional models in time-series forecasting tasks, leading to more accurate and reliable UV index predictions.
-
-<h3> Evaluation Metrics</h3>
-To evaluate the performance of my model, I use the Mean Squared Error (MSE) metric. MSE measures the average squared difference between the actual and predicted values, providing a clear indication of the model's accuracy. By minimizing the MSE, I aim to enhance the model's predictive capabilities and ensure robust performance.
-<br>
-<img width="220" alt="Image" src="https://github.com/user-attachments/assets/36b91218-c768-4e0f-b474-ce561cec8f7d" />
-<br>
-
+<ul>
+<li>Time Series Models:</li> ARIMA, SARIMA & Prophet
+                       Model trends, seasonality, and cyclical patterns in the data.
+<li>Deep Learning Models:</li> Long Short Term Memory (LSTM)
+                         Leverage recurrent neural networks to capture long-term dependencies in sequential data.
+</ul>
 # <h2>Final Stage - Deploying UV Monitor & Sunscreen Guide</h3>
 The last phase of my project involves deploying the UV Predictor & SPF Guide using Streamlit to create an interactive and user-friendly interface. Streamlit will enable users to input their city(City in Kenya) and receive real-time UV index predictions along with personalized sunscreen recommendations. By leveraging this platform, I aim to enhance accessibility and ensure users can make informed decisions about their sun protection with ease.
 
