@@ -88,7 +88,7 @@ My approach involves testing and comparing several types of models to determine 
 <li>Deep Learning Models:</li> Long Short Term Memory (LSTM)
                          Leverage recurrent neural networks to capture long-term dependencies in sequential data.
 </ul>
-# <h2>Time series Model</h2>
+<h2>Time series Model</h2>
 <strong>Autoregressive Integrated Moving Average (ARIMA)</strong>
 The ARIMA model is a popular statistical method used for time series forecasting. It captures patterns in time series data by combining three components.
 
@@ -96,28 +96,31 @@ The ARIMA model is a popular statistical method used for time series forecasting
 <ul>
 <li>Uses past values of the series to predict the next value.
 If p = 2, the current value depends on the last two values.</li>
+          
 2. Integrated (I) Component (d)
 
-Ensures the time series is stationary (constant mean and variance over time).
-Differencing is applied ( d ) times until the series becomes stationary.
+<li>Ensures the time series is stationary (constant mean and variance over time).
+Differencing is applied ( d ) times until the series becomes stationary.</li>
+
 3. Moving Average (MA) Component (q)
 
-Uses past forecast errors to improve predictions.
-If q = 1, the model includes the last error term:
-How ARIMA Works
-Make the Series Stationary
+<li>Uses past forecast errors to improve predictions.
+If q = 1, the model includes the last error term.</li>
+</ul>
+<h3>How ARIMA Works</h3>
+1. Make the Series Stationary
+<ul>
+<li>Check for trends or seasonality.</li>
+<li>Apply differencing if necessary.</li>
+          
+2. Select ARIMA Parameters (p, d, q)
+<li>Use Autocorrelation Function (ACF) and Partial Autocorrelation Function (PACF) plots.</li>
 
-Check for trends or seasonality.
-Apply differencing if necessary.
-Select ARIMA Parameters (p, d, q)
+3. Fit the Model
+<li>Train ARIMA on historical data.</li>
 
-Use Autocorrelation Function (ACF) and Partial Autocorrelation Function (PACF) plots.
-Fit the Model
-
-Train ARIMA on historical data.
-Make Forecasts
-
-Once trained, use the model to predict future values.
+4. Make Forecasts
+<li>Once trained, use the model to predict future values.</li>
 </ul>
 # <h2>Stakeholders</h2>
 The stakeholders for such a real world project would be:-
