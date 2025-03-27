@@ -50,11 +50,31 @@ This summary suggests that most UV index values are relatively low, with a maxim
 ![Image](https://github.com/user-attachments/assets/65669800-ca5b-4048-977f-f9eaf8cd8a0e)
 
 # <h2>Data Analysis</h2>
+![Image](https://github.com/user-attachments/assets/264d2d93-f429-4ab5-91e4-3ff6b9717607)
+<br>
+<strong>Seasonal Pattern</strong> – The UV index follows a cyclical pattern, with peaks occurring approximately once per year. This suggests that UV radiation levels are higher during specific seasons, likely summer.
 
+<strong>Yearly Trends</strong> – Each year exhibits similar trends: the UV index increases during warmer months and decreases in colder months.
+
+<strong>Fluctuations</strong> – There are noticeable spikes and variations in the UV index, indicating short-term changes, possibly due to weather conditions, atmospheric changes, or measurement anomalies.
+
+<strong>General Stability</strong> – Despite fluctuations, the overall pattern remains consistent, implying that UV index levels generally follow predictable seasonal cycles.
 
 
 # <h2>Data Pre-Processing</h2>
+To prepare the dataset for analysis and model training, the following preprocessing steps were performed:
 
+      <strong>Feature Scalling:</strong> Since the 'Close' prices was not normally distributed, I applied the Min-Max Scaler to normalize the data. This transformed the 
+              values into a range between 0 and 1, ensuring the model could better learn from the data.
+<strong>Data Splitting</strong>
+Chronological Order:
+Data is sorted by date to preserve temporal relationships.
+
+80/20 Split:
+
+          Training Set (80%): Earliest data for model learning.
+
+          Test Set (20%): Most recent data for evaluation.
 # <h2>Training the Model</h2>
 I went with <strong>The LSTM (Long Short-Term Memory) model</strong> to predict the UV index is an excellent choice due to its ability to handle sequential and time-series data effectively. 
 Here's why:
