@@ -42,11 +42,7 @@ I dropped all the other columns in the dataset and decided to work with only the
 <br>
 2.<strong>Distribution plot for uv_index_daily_max:</strong> Visualize how values are distributed across numeric columns revealing skewness and the presence of outliers.<br> 
 
-![Image](https://github.com/user-attachments/assets/d927b373-05bd-486e-91ac-a9417cb7e973)
-
-3. <strong>Correlation Matrix:</strong> Explores relationships that may exist between the numeric columns and the target variable UV Index.<br>
-![Image](https://github.com/user-attachments/assets/c0d66fa7-f02f-42e4-b013-3e9b622a59ea)
-
+![Image](https://github.com/user-attachments/assets/65669800-ca5b-4048-977f-f9eaf8cd8a0e)
 
 
 # <h2>Visualisations</h2>
