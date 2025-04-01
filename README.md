@@ -110,11 +110,11 @@ It includes seasonal auto-regression (SAR), seasonal differencing (SD), and seas
 
 #### Visualization
 - The results were plotted to compare training data, actual test data, and ARIMA predictions.
-  <p float="left">
-     
-  ![Image](https://github.com/user-attachments/assets/ea524cfc-7940-44a9-8571-c02ccae10d9c)
-  ![Image](https://github.com/user-attachments/assets/2bdd241c-d659-4609-a721-b3710a6f1eb9) 
-</p>
+ <div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/user-attachments/assets/ea524cfc-7940-44a9-8571-c02ccae10d9c" width="45%" />
+  <img src="https://github.com/user-attachments/assets/2bdd241c-d659-4609-a721-b3710a6f1eb9" width="45%" />
+</div>
+
 
 #### Evaluation
 - Metrics such as **MAE**, **MSE**, and **RMSE** were calculated to evaluate model performance.
