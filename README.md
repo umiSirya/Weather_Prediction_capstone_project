@@ -140,6 +140,28 @@ It includes seasonal auto-regression (SAR), seasonal differencing (SD), and seas
 
 <img width="238" alt="Image" src="https://github.com/user-attachments/assets/a94199c8-7d93-4d71-bd32-676f134103bc" />
 
+## Prophet Model
+
+### Prophet Configuration
+- **Yearly Seasonality**: Enabled to capture annual trends.
+- **Weekly/Daily Seasonality**: Disabled as they are not relevant for this dataset.
+- **Seasonality Mode**: Set to `'multiplicative'` to handle varying seasonal effects.
+
+### Training Process
+1. The model was trained on the training data (`train_data`).
+2. Future predictions were generated for the test period using `make_future_dataframe`.
+
+### Visualization
+- Actual UV index values were plotted alongside Prophet's predictions.
+- Confidence intervals (shaded area) were added to indicate prediction uncertainty.
+- 
+![Image](https://github.com/user-attachments/assets/e38c4ec8-9c6d-4215-9b79-f410996487da)
+
+## Model Evaluation
+
+The model's performance was evaluated using the following metrics:
+
+<img width="209" alt="Image" src="https://github.com/user-attachments/assets/ac84f34f-17c4-4008-8ffa-fbb820df8b91" />
 
 
 # <h2>Stakeholders</h2>
