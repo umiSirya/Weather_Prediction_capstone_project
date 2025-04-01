@@ -129,11 +129,16 @@ It includes seasonal auto-regression (SAR), seasonal differencing (SD), and seas
 
 #### Forecasting
 - Predictions were made on the test set and visualized alongside actual values.
+  <div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/user-attachments/assets/4966f1cd-7836-41e6-804b-b9901b5328da" width="45%">
+  <img src="https://github.com/user-attachments/assets/c777581e-4f46-4b97-b0bc-7460d80d1fdc" width="45%">
+</div>
+
 
 #### Evaluation
 - Similar metrics (**MAE**, **MSE**, **RMSE**) were computed to assess performance.
 
----
+<img width="238" alt="Image" src="https://github.com/user-attachments/assets/a94199c8-7d93-4d71-bd32-676f134103bc" />
 
 
 
