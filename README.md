@@ -66,19 +66,12 @@ This summary suggests that most UV index values are relatively low, with a maxim
 
 
 # <h2>Data Pre-Processing</h2>
-To prepare the dataset for analysis and model training, the following preprocessing steps were performed:
-
-<strong>Feature Scalling:</strong> Since the UV Index was not normally distributed, I applied the Min-Max Scaler to normalize the data. This transformed the 
-          values into a range between 0 and 1, ensuring the model could better learn from the data.
-<strong>Data Splitting</strong>
-Chronological Order:
-Data is sorted by date to preserve temporal relationships.
-
-80/20 Split:
-
-  Training Set (80%): Earliest data for model learning.
-
-  Test Set (20%): Most recent data for evaluation.
+### Steps Performed:
+1. **Datetime Conversion**: Ensured the `instance_date` column was in datetime format and set as the index.
+2. **Stationarity Check**: Applied the ADF test and differencing if necessary.
+3. **Train-Test Split**: Divided the data into training and testing sets, with the last 2 months reserved for testing.
+4. **ACF and PACF Plots**: Used to determine the optimal ARIMA and SARIMA parameters.
+   
 # <h2>Model Development</h2>
 My approach involves testing and comparing several types of models to determine the best fit for cryptocurrency price prediction:
 
@@ -89,40 +82,60 @@ My approach involves testing and comparing several types of models to determine 
                          Leverage recurrent neural networks to capture long-term dependencies in sequential data.
 </ul>
 <h2>Time series Model</h2>
-<strong>Autoregressive Integrated Moving Average (ARIMA)</strong>
-The ARIMA model is a popular statistical method used for time series forecasting. It captures patterns in time series data by combining three components.
+ARIMA (AutoRegressive Integrated Moving Average) and SARIMA (Seasonal ARIMA) are time series forecasting models.
 
-1. AutoRegressive (AR) Component (p)
-<ul>
-<li>Uses past values of the series to predict the next value.
-If p = 2, the current value depends on the last two values.</li>
-          
-2. Integrated (I) Component (d)
+ARIMA:
 
-<li>Ensures the time series is stationary (constant mean and variance over time).
-Differencing is applied ( d ) times until the series becomes stationary.</li>
+AR (AutoRegressive): Uses the relationship between an observation and a number of lagged observations (previous time points).
 
-3. Moving Average (MA) Component (q)
+I (Integrated): Makes the series stationary by differencing (subtracting previous values).
 
-<li>Uses past forecast errors to improve predictions.
-If q = 1, the model includes the last error term.</li>
-</ul>
+MA (Moving Average): Models the error term as a combination of past forecast errors.
 
-<h3>How ARIMA Works</h3>
-1. Make the Series Stationary
-<ul>
-<li>Check for trends or seasonality.</li>
-<li>Apply differencing if necessary.</li>
-          
-2. Select ARIMA Parameters (p, d, q)
-<li>Use Autocorrelation Function (ACF) and Partial Autocorrelation Function (PACF) plots.</li>
+SARIMA:
 
-3. Fit the Model
-<li>Train ARIMA on historical data.</li>
+Extends ARIMA by adding seasonal components to account for periodic patterns (seasonality) in data.
 
-4. Make Forecasts
-<li>Once trained, use the model to predict future values.</li>
-</ul>
+It includes seasonal auto-regression (SAR), seasonal differencing (SD), and seasonal moving average (SMA).
+### ARIMA Model
+
+#### Training
+- The ARIMA model was trained using the order `(1, 1, 1)`:
+  - `p=1`: Number of autoregressive terms.
+  - `d=1`: Degree of differencing.
+  - `q=1`: Number of moving average terms.
+
+#### Forecasting
+- Predictions were made on the test set and compared with actual values.
+
+#### Visualization
+- The results were plotted to compare training data, actual test data, and ARIMA predictions.
+  <p float="left">
+  <![Image](https://github.com/user-attachments/assets/ea524cfc-7940-44a9-8571-c02ccae10d9c)" />
+  <![Image](https://github.com/user-attachments/assets/2bdd241c-d659-4609-a721-b3710a6f1eb9) />
+</p>
+
+#### Evaluation
+- Metrics such as **MAE**, **MSE**, and **RMSE** were calculated to evaluate model performance.
+<img width="208" alt="Image" src="https://github.com/user-attachments/assets/5a714b21-605c-48ac-b6f9-d74cb2b46e0c" />
+
+### SARIMA Model
+
+#### Training
+- The SARIMA model extended ARIMA by adding seasonal components:
+  - `order=(1, 0, 1)`: Non-seasonal ARIMA parameters.
+  - `seasonal_order=(1, 0, 1, 12)`: Seasonal ARIMA parameters with a period of 12 months.
+
+#### Forecasting
+- Predictions were made on the test set and visualized alongside actual values.
+
+#### Evaluation
+- Similar metrics (**MAE**, **MSE**, **RMSE**) were computed to assess performance.
+
+---
+
+
+
 # <h2>Stakeholders</h2>
 The stakeholders for such a real world project would be:-
 <br>
