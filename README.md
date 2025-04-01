@@ -141,6 +141,15 @@ It includes seasonal auto-regression (SAR), seasonal differencing (SD), and seas
 <img width="238" alt="Image" src="https://github.com/user-attachments/assets/a94199c8-7d93-4d71-bd32-676f134103bc" />
 
 ## Prophet Model
+The <strong>Prophet model</strong> is a time series forecasting tool designed to handle data with strong <strong>seasonal effects</strong> and <strong>missing values</strong>. It works by decomposing the time series into three main components:
+
+1. <strong>Trend</strong>: Captures long-term changes in the data over time (e.g., growth or decline).
+2. <strong>Seasonality</strong>: Models periodic patterns that repeat at regular intervals (e.g., weekly or yearly cycles).
+3. <strong>Holidays</strong>: Incorporates the effects of holidays or special events that can impact the data.
+
+Prophet uses an <strong>additive</strong> or <strong>multiplicative</strong> model to combine these components and make forecasts. It automatically handles <strong>seasonality</strong>, <strong>outliers</strong>, and <strong>missing data</strong>, and it also allows users to include custom <strong>holidays</strong> and special events for more accurate predictions.
+
+In short, Prophet is easy to use for time series forecasting when there are clear <strong>seasonal trends</strong> and irregularities in the data.
 
 ### Prophet Configuration
 - **Yearly Seasonality**: Enabled to capture annual trends.
