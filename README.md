@@ -45,9 +45,10 @@ I dropped all the other columns in the dataset and decided to work with only the
 This summary suggests that most UV index values are relatively low, with a maximum of 3.44, which is moderate to low UV exposure.
 
 <br>
-I chose to work with data from 2000 to 2004 because, as shown in the chart, this period has a consistent and complete UV Index Daily Max trend without the gaps and irregularities seen in the later years.
 
 ![Image](https://github.com/user-attachments/assets/358d4ff2-f1b1-4093-9cba-f089ce677fb0)
+
+I chose to work with data from 2000 to 2004 because, as shown in the chart, this period has a consistent and complete UV Index Daily Max trend without the gaps and irregularities seen in the later years.
 <br>
 ![Image](https://github.com/user-attachments/assets/264d2d93-f429-4ab5-91e4-3ff6b9717607)
 
