@@ -45,14 +45,10 @@ I dropped all the other columns in the dataset and decided to work with only the
 This summary suggests that most UV index values are relatively low, with a maximum of 3.44, which is moderate to low UV exposure.
 
 <br>
-<strong>Distribution plot for uv_index_daily_max:</strong> Visualize how values are distributed across numeric columns revealing skewness and the presence of outliers.<br> 
+I chose to work with data from 2000 to 2004 because, as shown in the chart, this period has a consistent and complete UV Index Daily Max trend without the gaps and irregularities seen in the later years.
+
+![Image](https://github.com/user-attachments/assets/358d4ff2-f1b1-4093-9cba-f089ce677fb0)
 <br>
-
-![Image](https://github.com/user-attachments/assets/aae3a3e0-2f96-4033-8231-47814c469d02)
-
-<br>
-# <h2>Data Analysis</h2>
-
 ![Image](https://github.com/user-attachments/assets/264d2d93-f429-4ab5-91e4-3ff6b9717607)
 
 <br>
